@@ -1,0 +1,2 @@
+# cardputer 用プロジェクトを置くディレクトリ。
+# projects/cardputer/<name>/ を作り、platformio.ini に [project:cardputer-<name>] と [env:cardputer-<name>] を足す。

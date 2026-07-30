@@ -1,0 +1,2 @@
+# capsule 用プロジェクトを置くディレクトリ。
+# projects/capsule/<name>/ を作り、platformio.ini に [project:capsule-<name>] と [env:capsule-<name>] を足す。

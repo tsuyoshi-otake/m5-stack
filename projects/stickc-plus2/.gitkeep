@@ -1,0 +1,2 @@
+# stickc-plus2 用プロジェクトを置くディレクトリ。
+# projects/stickc-plus2/<name>/ を作り、platformio.ini に [project:stickc-plus2-<name>] と [env:stickc-plus2-<name>] を足す。

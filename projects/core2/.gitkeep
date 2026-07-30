@@ -1,0 +1,2 @@
+# core2 用プロジェクトを置くディレクトリ。
+# projects/core2/<name>/ を作り、platformio.ini に [project:core2-<name>] と [env:core2-<name>] を足す。

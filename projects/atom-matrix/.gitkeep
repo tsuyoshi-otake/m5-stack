@@ -1,0 +1,2 @@
+# atom-matrix 用プロジェクトを置くディレクトリ。
+# projects/atom-matrix/<name>/ を作り、platformio.ini に [project:atom-matrix-<name>] と [env:atom-matrix-<name>] を足す。

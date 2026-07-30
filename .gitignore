@@ -1,0 +1,10 @@
+.pio/
+.pioenvs/
+.piolibdeps/
+.vscode/
+!.vscode/extensions.json
+.theia/
+*.bin
+*.elf
+*.map
+secrets.h

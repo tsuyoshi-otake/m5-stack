@@ -1,0 +1,2 @@
+# cores3 用プロジェクトを置くディレクトリ。
+# projects/cores3/<name>/ を作り、platformio.ini に [project:cores3-<name>] と [env:cores3-<name>] を足す。

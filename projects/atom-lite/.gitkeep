@@ -1,0 +1,2 @@
+# atom-lite 用プロジェクトを置くディレクトリ。
+# projects/atom-lite/<name>/ を作り、platformio.ini に [project:atom-lite-<name>] と [env:atom-lite-<name>] を足す。
