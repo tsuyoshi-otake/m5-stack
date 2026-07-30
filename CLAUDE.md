@@ -45,6 +45,12 @@ ESP32 と ESP32-S3 は別toolchainなので、`core` 系を初めて焼くとき
   csv から自動算出される。ここをフラッシュ全体（8388608 等）に手で書くと、app パーティション
   (default_8MB.csv なら 0x330000) を超えたバイナリがサイズチェックを素通りし、
   書き込み時に初めて失敗する。
+- **`M5.begin()` は `Serial.begin()` を呼ばない**。setup の冒頭で明示的に呼ばないと
+  シリアル出力が一切出ない。画面は正常に動くのでログだけ無言という紛らわしい状態になる。
+- **`pio device monitor` には `-e <env>` を付ける**。省くと `default_envs` の firmware.elf を
+  例外デコーダが掴んで `does not exist, rebuild the project?` と出る。
+- **`pio` の出力が UnicodeEncodeError で落ちることがある**（`pkg show` 等）。
+  `export PYTHONIOENCODING=utf-8` を付けて実行すれば通る。
 
 ## 書き込み
 

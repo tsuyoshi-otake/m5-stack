@@ -11,12 +11,13 @@ m5-stack/
 ├── projects/
 │   ├── _common/            # 全機種共通で焼けるもの
 │   │   └── hello/main.cpp
-│   ├── cardputer/          # 以下、機種固有プロジェクトを機種ごとに置く
+│   ├── core/               # 以下、機種固有プロジェクトを機種ごとに置く
+│   │   └── uv/             # DFRobot SEN0636 の UV インデックスを画面表示
+│   ├── cardputer/
 │   ├── capsule/
 │   ├── stickc-plus2/
 │   ├── atom-lite/
 │   ├── atom-matrix/
-│   ├── core/
 │   ├── core2/
 │   └── cores3/
 ├── lib/                    # プロジェクト横断の共有ライブラリ
@@ -39,6 +40,15 @@ m5-stack/
 | `[env:*]` | 上 2 つを `extends` で掛け合わせたビルド対象 |
 
 機種固有プロジェクトは env が 1 つ、共通プロジェクトは機種分の env を並べる、という使い分けになる。
+
+## プロジェクト一覧
+
+| env | 内容 |
+|---|---|
+| `<device>-hello` | 疎通確認。M5Unified で全機種共通のソース 1 本 |
+| `core-uv` | DFRobot SEN0636 の UV インデックスを表示 → [projects/core/uv/](projects/core/uv/) |
+
+配線や機種固有の注意点は各プロジェクトの README に書く。
 
 ## ビルド・書き込み
 
